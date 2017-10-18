@@ -1,0 +1,218 @@
+* {
+  cursor: default;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  &:hover, &:active, &:visited {
+    cursor: default;
+    outline: none;
+  }
+}
+
+body {
+  margin-bottom: 8%;
+}
+
+.centercenterit {
+  height: 100vh;
+  justify-content: center;
+}
+
+hr {
+  margin: 3rem 0;
+}
+
+th {
+  text-align: left;
+}
+
+/***************** Schriftformate ****************/
+
+.link {
+  color: get-color(hover);
+  font-weight: 500;
+  &:hover {
+    color: get-color(hover);
+    text-decoration: underline;
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.date {
+  font-size: rem-calc(20);
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: get-color(secondary);
+}
+
+p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  //  -moz-hyphens: auto;
+  //       hyphens: auto;
+  font-family: 'Work Sans', sans-serif;
+  color: get-color(secondary);
+  font-size: rem-calc(18);
+}
+
+code {
+  font-family: $code-font-family;
+  background-color: get-color(code);
+  color: grey;
+  border-radius: 4px;
+  border-style: none;
+  padding: 3px 5px;
+}
+
+.aussenabstand {
+  margin: 0.5rem 6rem 5rem 6rem;
+}
+
+/************************* Login *************************/
+
+.loginbackground {
+  background-color: get-color(secondary);
+  color: white;
+  border-radius: 8px;
+  padding: 1.5rem $global-padding;
+  }
+
+  .h1login {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    .h1 {
+      font-size: rem-calc(36);
+      font-weight: 600;
+    }
+  }
+
+/************* Formular **************/
+
+.iptlogin {
+  margin-bottom: rem-calc(40);
+  // padding-left: 1rem;
+  height: 3.5rem;
+  width: 100%;
+}
+
+.button {
+  width: 50%;
+  align-self: flex-end;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: rem-calc(20);
+}
+
+ /************************* Übersicht *************************/
+
+li {
+  color: get-color(secondary);
+}
+  .ulli {
+    font-family: 'Work Sans', sans-serif;
+    font-size: rem-calc(18);
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+
+  .olli {
+    font-family: 'Work Sans', sans-serif;
+    font-size: rem-calc(18);
+    list-style-position: inside;
+  }
+
+  .btnplus {
+    width: 100%;
+    line-height: 4rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+#logout {
+  color: get-color(secondary);
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  &:hover {
+    color: get-color(hover);
+  }
+}
+
+#titel {
+  color: get-color(primary);
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-size: rem-calc(48);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#nav {
+  li {
+    margin: 0.5rem 2rem 5rem 2rem;
+  }
+  a {
+    font-size: rem-calc(32);
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+    &:hover {
+      color: get-color(hover);
+    }
+  }
+  .button {
+    font-size: rem-calc(20);
+    width: auto;
+    padding: 0.8rem 1rem;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+#secondnav {
+  font-weight: 600;
+  font-size: rem-calc(20);
+  height: 100vh;
+  justify-content: center;
+  a {
+    padding: 0.6rem;
+    padding-left: 20%;
+    &:hover {
+      color: get-color(hover);
+    }
+  }
+  li {
+      margin: 0;
+    ul {
+      background-color: #434343;
+      margin: 0;
+      padding: 0.7rem;
+      li {
+        a {
+          font-size: rem-calc(16);
+        }
+      }
+    }
+  }
+}
+
+/************************* Arbeitsdoku *************************/
+
+.backgroundcolor-black {
+  background-color: get-color(secondary);
+  a {
+    color: white;
+    &:hover, :active {
+      color: get-color(primary);
+    }
+  }
+}
+
+img {
+  margin: 1rem 0 2rem 0;
+}
